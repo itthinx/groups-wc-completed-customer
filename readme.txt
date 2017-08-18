@@ -1,7 +1,7 @@
 === Groups WooCommerce Completed Customer ===
 Contributors: itthinx
 Donate link: http://www.itthinx.com/plugins/woocommerce-product-generator/
-Tags: automatic, benchmark, example, generator, performance, product, products, sample, test, tester, testing, test-tool, woocommerce
+Tags: automatic, customer, customers, example, group, groups, order, orders, woocommerce
 Requires at least: 4.0
 Tested up to: 4.8.1
 Stable tag: 1.0.0
