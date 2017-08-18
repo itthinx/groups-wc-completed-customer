@@ -12,17 +12,16 @@ This plugin adds customers to the Customer group upon their first completed orde
 == Description ==
 
 This plugin adds customers to the Customer group upon their first completed order.
+The group is created on the fly (also if an alternative group as explained below is used).
 
-An alternative group can be indicated by implementing the groups_wc_completed_customer_group_name filter.
+An alternative group can be indicated by implementing the `groups_wc_completed_customer_group_name` filter.
 Here is an example, which will add the customer with a completed order to the 'Example' group instead of the
-'Customer' group. The group is creaed on the fly (also if the default 'Customer' group is used).
+'Customer' group. You can use the following code in your theme's `functions.php`:
 
-`
-add_filter( 'groups_wc_completed_customer_group_name', 'my_groups_wc_completed_customer_group_name' );
-function my_groups_wc_completed_customer_group_name( $name ) {
-	return 'Example';
-}
-`
+	add_filter( 'groups_wc_completed_customer_group_name', 'my_groups_wc_completed_customer_group_name' );
+	function my_groups_wc_completed_customer_group_name( $name ) {
+		return 'Example';
+	}
 
 Upon plugin activation, the user-group assignment is done automatically when an order adopts the status 'completed'.
 
